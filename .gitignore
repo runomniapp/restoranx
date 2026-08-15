@@ -1,0 +1,29 @@
+# Yerel veritabanı — müşteri sipariş bilgileri içerir, repoya girmemeli
+config/database.sqlite
+*.sqlite
+*.sqlite-journal
+
+# Panelden yüklenen görseller (ürün / kampanya / logo)
+public/uploads/*
+!public/uploads/.gitkeep
+!public/uploads/*/
+public/uploads/*/*
+!public/uploads/*/.gitkeep
+
+# Bağımlılıklar
+/vendor/
+/node_modules/
+
+# Log ve geçici dosyalar
+*.log
+*.tmp
+*.bak
+.cache/
+
+# İşletim sistemi / editör
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+*.sublime-*
